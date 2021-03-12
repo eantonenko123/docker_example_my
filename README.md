@@ -11,4 +11,13 @@ docker run -i -t test_image:18.05 /bin/bash
 docker run test_image:18.05 (запускает контейнер, на основе указанного образа)
 docker history test_image_my:18.05 (Отображает историю конкретного образа)
 docker logs --follow my_container (эта команда используется для просмотра логов указанного контейнера. Можно использовать флаг --follow, чтобы следить за логами работающей программы:)
+docker logs <container_id>
+exit - выйти с контейнера
+docker exec 72ca2488b353 ls (смотреть текущую директорию/содержимое)
+docker start 7579c85c8b7e    #ваш CONTAINER_ID
+docker ps
+docker exec -it 7579c85c8b7e /bin/bash  #ваш CONTAINER_ID зайти в контейнер
+docker-compose build
+docker-compose up
+docker-compose logs
 ```
